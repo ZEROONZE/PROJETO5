@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<title>menu</title>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/styleTV.css">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="JavaScript/JavaScript.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script src="JavaScript/JavaScript1.js" type="text/javascript"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<nav class="menu">
+	<ul>
+		<li><a href="#">Home</a>
+      <li  class="submenu" ><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#">Cadastro</a>
+        <ul class="dropdown">
+          <li><a href="#">TV</a></li>
+          <li><a href="#">Virtua</a></li>
+          <li><a href="#">Móvel</a></li>
+          <li><a href="#">4 Play</a></li>
+          
+        </ul>
+      </li>
+		<li class="submenu"><a href="#">Planos</a>
+			<ul class="dropdown">
+				<li><a onclick="$('#bs-navbar-collapse').collapse('hide');"  href="#facil">FACIL</a></li>
+				<li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#mix">MIX</a></li>
+		  	<li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#top">TOP</a></li>
+        <li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#top">MÓVEL</a></li>
+        <li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#top">CLARO BOX</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Dicas</a>
+		<li><a href="#">Atividades</a>
+	</ul>
+</nav>
+
+
+
+
+</head>
+<body>
+
+
+
+<section>
+
+  <div class="titulo">
+    <h1> COMO CADASTRAR INTERNET</h1>
+  </div>
+  
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="img/C1.jpg" style="width:100%">
+  <div class="text">1° Passo, clique em nova proposta.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="img/C2.jpg" style="width:100%">
+  <div class="text">2° Passo, preenche os dados do cliente.</div>  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="img/C3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="img/C7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="img/C7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="img/C7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="img/C7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="img/C7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="img/C88.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="img/C7.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+
+  
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</section>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span>  
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<script src="JavaScript/JavaScript.js" type="text/javascript"></script>
+</body>
+</html> 
