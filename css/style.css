@@ -242,7 +242,7 @@ img {vertical-align: middle;}
 
 
 .slideshow-container {
-top:29%;
+top:19%;
   position: relative;
   margin: auto;
   width: 960px;
@@ -345,7 +345,39 @@ border-radius: 22px;
   top: 160px;
   text-align: center;
   position: absolute;
-position: relative;
+  position: relative;
 
+
+}
+
+.tituloo {
+
+	align-items: center;
+	top: 10px;
+	text-align: center;
+	position: absolute;
+  position: relative;
+  
+  
+  }
+
+/* Texto conteúdo APP */
+
+
+
+.textoD{ 
+   position: relative;
+	text-align: center;
+	align-items: center;
+	margin: 5%;
+	top: 137px;
+	font-size: 17px;
+}
+
+.BENEAPP {
+
+top: 19%;
+
+position: relative;
 
 }
