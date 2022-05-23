@@ -292,14 +292,13 @@ position: relative;
 text-align: center;
 	align-items: center;
 	border-radius: 18px;
-	margin-left: 60px;
+	
 
 	
  }.vari1{
-	position: relative;
-	text-align: center;
-		align-items: center;
-	margin-left: 25%;
+	 margin-left: auto;
+    margin-right: auto;
+    width: 33em;
 
 	 }
 .borda{
