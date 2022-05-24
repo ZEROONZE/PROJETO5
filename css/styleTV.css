@@ -7,6 +7,8 @@ body {
   background: #7f7fd5;
   background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
   width: 100%;
+  
+  
 }
 
 .container {
@@ -276,7 +278,9 @@ background-color: #333;
   .textoD{
    text-align: center;
    margin-bottom: 80px;
-  
+   font-size: 20px;
+   font-family: "Quicksand", sans-serif;
+   margin: 30px;
   }
 
 
@@ -562,7 +566,7 @@ top: 90%;
 }
 
 .container .cardr .face.face1 .content1 img{
-    max-width: 100px;
+    max-width: 130px;
 }
 
 .container .cardr .face.face1 .content1 h3{
@@ -627,6 +631,54 @@ margin-top: 39px;
 position: relative;
 
 }
+
+
+/* aplicativos */
+.aplicativos{
+
+margin: 8px;
+position: relative;
+
+
+display: flex; /* coloca as imagens uma ao lado da outra */
+
+text-align: center;
+align-items: center;
+
+
+}
+
+
+.aplicativ {
+height: 130px;
+width:130px;
+display: flex; /* coloca as imagens uma ao lado da outra */
+  position: relative;
+  text-align: center; 
+
+align-items: center;
+  transform: translate(-50%, -50%);
+ 
+  top: 50%;
+  left:30%
+
+}
+
+
+.aplicati{
+
+  margin-top:8%;
+margin: 10px;
+ position: relative;
+
+
+}
+
+
+
+
+
+
 .textP{
 font-size: 10px;
 text-align: center;
