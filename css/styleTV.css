@@ -658,9 +658,9 @@ display: flex; /* coloca as imagens uma ao lado da outra */
 
 align-items: center;
   transform: translate(-50%, -50%);
- 
+ margin-top: 3%;
   top: 50%;
-  left:30%
+  left:33%
 
 }
 

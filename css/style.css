@@ -250,6 +250,20 @@ top: 110px;
 
 }
 
+.titulou {
+	font-family: Comic Sans, Comic Sans MS, cursive;
+  align-items: center;
+  margin: -6%;
+  margin-top: 9%;
+  text-align: center;
+  position: relative;
+
+
+}
+
+
+
+
 .tituloo {
 	font-family: Comic Sans, Comic Sans MS, cursive;
 
@@ -263,7 +277,7 @@ top: 110px;
   
   }
 
-/* Texto conteúdo APP */
+/* Texto conteúdo APP */9
 
 
 
@@ -369,11 +383,11 @@ text-align: center;
 
 	 .efeitoParallax1 {
 
-	
+		box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 		width: 100%;
-		height: 400px;
+		height: 340px;
 		margin-top: 0;
-		background-image: url(../img/capa3.jpg);
+		
 		background-position: bottom;
 		background-attachment: fixed;
 		background-size: cover;
@@ -397,3 +411,33 @@ text-align: center;
 	}
 
 	
+
+/* slider inicial */
+.box{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	position: relative;
+	
+	}
+	
+	.box-image img  {
+		
+	
+		top: 8%;
+		width: 100%;
+	    height: 400px;
+		transition: all 0.7s ease;
+		border-radius: 5px;
+		animation: anima;
+		animation-duration: 800ms;
+		border-radius: 4px;
+		right: 30px;
+		box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+	}
+	
+	@keyframes anima{
+	from{transform:translate(-15px,00)}
+	to{transform:translate(0px,00)}
+	
+	}
