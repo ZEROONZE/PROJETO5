@@ -103,6 +103,8 @@ nav ul li ul li a {
 	background: #73757533;
 	color: rgb(255, 255, 255);
 	border-bottom: 1px solid #DDE0E7;
+	font-size: 12px;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav ul li ul li a:hover {
@@ -116,7 +118,7 @@ nav ul li ul li a:hover {
 	background-color: transparent;
 	box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
 	color: #ffff;
-
+  
 }
 
 
@@ -283,7 +285,13 @@ top: 110px;
   .prev, .next,.text {font-size: 11px}
 }
 
-
+.stitulo{
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	text-align: center;
+	font-size: 27px;
+	margin-top: -2%;
+	position: relative;
+}
 .titulo {
 	font-family: Comic Sans, Comic Sans MS, cursive;
  
