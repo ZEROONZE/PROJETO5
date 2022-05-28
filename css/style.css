@@ -13,7 +13,7 @@ margin:0;
 background: #7f7fd5;
 background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
  height: 100vh;
- width: 100vw;
+ width: 100%;
 }
 
 .EDUCAMAIS{
@@ -496,3 +496,63 @@ text-align: center;
 	to{transform:translate(0px,00)}
 	
 	}
+
+
+
+	@media only screen and (max-device-width: 900px) {
+
+		*{
+
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;  /*dimensionamento de caixa: caixa de borda;*/
+			width: 100%;
+			color: #000000;
+			font-family: 'Rubik', sans-serif;
+
+		}
+	.menu ul li a {
+		color: #ffffff;
+		flex-direction: column;
+position: relative;
+font-size: 25px;
+	}
+	.menu ul li{
+text-align: center;
+		position: relative;
+	flex-direction: column;
+
+	}
+
+
+	.menu ul {
+
+		flex-direction: column;
+
+  }
+.menu{
+	background: #eb0808;
+background: linear-gradient(to right, #021b3d, #1d015e, #080699);
+border-bottom: 1px solid #DDE0E7;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: transparent;
+	box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+	color: #ffff;
+  
+}
+
+
+/* Menu */
+
+
+
+		
+
+
+
+
+	
