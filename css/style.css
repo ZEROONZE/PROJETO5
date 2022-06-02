@@ -497,98 +497,68 @@ text-align: center;
 	
 	}
 
-    #btnmenu{
+	.mobile-menu{
 
 		display: none;
 
 	}
 
-	@media only screen and (max-device-width: 900px) {
-
-		*{
-
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;  /*dimensionamento de caixa: caixa de borda;*/
-			width: 100%;
-			color: #000000;
-			font-family: 'Rubik', sans-serif;
-				}
-
-
-	     .menu ul li a {
-		     color: #ffffff;
-		     flex-direction: column;
-          	 position: relative;
-				}
-
-
-
-	.menu ul li{
-			text-align: center;
-			position: relative;
-			flex-direction: column;
-			font-size: 25px;
-			}
-
-
-	.menu ul {
-
-		flex-direction: column;
-
- 		 }
-		.menu{
-			background: #eb0808;
-			background: linear-gradient(to right, #021b3d, #1d015e, #080699);
-			border-bottom: 1px solid #DDE0E7;
-				}
-
-			.dropdown {
-			display: none;
-			position: absolute;
-			background-color: transparent;
-			box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
-			color: #ffff;
-			font-size: 25px;
-				}
-
-
-			.menu ul li:hover > ul {
-				display: block;
-				transition: all 0.5s;
-				cursor: pointer;
-  
-  
-			  }
-
- 		  .menu ul li ul:hover > li {
-				display: none;
-				transition: all 0.5s;
-				cursor: pointer; 
-   			 }
-
-				main {
-
-					background: url("menu.png") no-repeat center center;
-				
-				}
-
-
-
-				#btnmenu{
-
-					display: block;
-
-
-
-				}
-
-
-
-
-
-
-
-
-			}
-	
+	.mobile-menu div {
+		width: 32px;
+		height: 2px;
+		background: #fff;
+		margin: 8px;
+		transition: 0.3s;
+	  }
+	@media (max-width: 780px) {
+		body {
+		  overflow-x: hidden;
+		}
+		.nav-list {
+		  position: absolute;
+		  top: 8vh;
+		  right: 0;
+		  width: 50vw;
+		  height: 92vh;
+		  background: #23232e;
+		  flex-direction: column;
+		  align-items: center;
+		  justify-content: space-around;
+		  transform: translateX(100%);
+		  transition: transform 0.3s ease-in;
+		}
+		.nav-list li {
+		  margin-left: 0;
+		  opacity: 0;
+		}
+		.mobile-menu {
+		  display: block;
+		}
+	  }
+	  
+	  .nav-list.active {
+		transform: translateX(0);
+	  }
+	  
+	  @keyframes navLinkFade {
+		from {
+		  opacity: 0;
+		  transform: translateX(50px);
+		}
+		to {
+		  opacity: 1;
+		  transform: translateX(0);
+		}
+	  }
+	  
+	  .mobile-menu.active .line1 {
+		transform: rotate(-45deg) translate(-8px, 8px);
+	  }
+	  
+	  .mobile-menu.active .line2 {
+		opacity: 0;
+	  }
+	  
+	  .mobile-menu.active .line3 {
+		transform: rotate(45deg) translate(-5px, -7px);
+	  }
