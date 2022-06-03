@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
 <title class="EDUCAMAIS">EDUCAMAIS</title>
 <link rel="icon" href="img/49672.png">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/styleTV.css">
 <script src="JavaScript/JavaScript.js" type="text/javascript"></script>
@@ -19,14 +19,8 @@
 <body>
 
 
-  <header>
-
+<header>
 <nav class="menu" id="menu">
-  <div class="mobile-menu">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-  </div>
   <ul class="nav-list">
 		<li><a href="index.html">Home</a>
       <li  class="submenu"><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#">Cadastro</a>
@@ -58,8 +52,45 @@
 		<li><a href="#">Atividades</a>
       
 	</ul>
-</nav>
 
+</nav>
+<div class="center" id="menu">
+<nav class="menu-mobile">
+  <a class="icon-menu"><i class="fa fa-bars" style="font-size:43px"></i></a> 
+  <ul>
+		<li><a href="index.html">Home</a>
+      <li  class="submenu"><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="#">Cadastro</a>
+        <ul class="dropdown">
+          <li><a href="Guias/CadastroVirtua.html">VIRTUA</a></li>
+          <li><a href="Guias/CadTripleplay.html">VIRTUA + APP</a></li>
+          <li><a href="Guias/CadVirtuaTV.html">VIRTUA + BOX</a></li>
+          <li><a href="Guias/CadTVMAIS.html">VIRTUA + CLARO TV HD</a></li>
+          <li><a href="Guias/CadTVMAIS4K.html">VIRTUA + CLARO TV 4K</a></li>
+          <li><a href="Guias/CadVirtuaMN.html">VIRTUA + MÓVEL + NETFLIX</a></li>
+                   
+        </ul>
+      </li>
+		<li class="submenu"><a href="#">Planos</a>
+			<ul class="dropdown">
+        <li><a onclick="$('#bs-navbar-collapse').collapse('hide');"  href="Guias/TV.html">Claro APP</a></li>
+				<li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="Guias/TV.html #BOX">Claro Box</a></li>
+		  	<li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="Guias/TV.html #CONVECIONAL">TV Convecional</a></li>
+              <li><a onclick="$('#bs-navbar-collapse').collapse('hide');" href="Guias/TV.html #CONVECIONAL4K">TV Convecional 4K</a></li>
+			</ul>
+		</li>
+		<li class="submenu"></liclass> <a href="#">Pendências</a>
+      <ul class="dropdown">
+        <li><a href="Guias/cancelarP.html">Cancelar proposta</a></li>
+        <li><a href="Guias/VistoriaE.html">Vistoria de endereço</a></li>
+        <li><a href="Guias/CorreçaoV.html">Correção de venda</a></li>
+        <li><a href="Guias/DesblindarE.html">Desblindar endereço</a></li>
+      </ul></li>
+		<li><a href="#">Atividades</a>
+      
+	</ul>
+
+</nav>
+</div>
 </header>
 
 <main></main>
