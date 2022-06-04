@@ -511,7 +511,7 @@ text-align: center;
 	}
 	
 	.menu-mobile ul{
-		background: linear-gradient(to right, #91eae4, #5888e2, #7f7fd5);
+	
 		opacity: 0;
 		transition: 1s;
 		width: 100%;
@@ -520,8 +520,7 @@ text-align: center;
 		top: 65px;
 		text-align: center;
 		flex-direction: column;
-	  
-	  
+	  	color: white;
 	
 	}
 	.center{
@@ -541,9 +540,7 @@ text-align: center;
 	
 	.show-menu{
 		opacity: 1 !important;
-	   
-	   
-	   
+	      
 	   }
 	   
 	
@@ -568,9 +565,14 @@ text-align: center;
 	.menu-mobile a ul li li ul li a {
 		color: rgb(88, 12, 12);
 		position: relative;
-
+		
 	}
 	
+	.dropdown-mobile li a{
+		color: #eee;
+		background-color: #000000;
+
+   }
 		
 	@media screen and (max-width: 768px) {
 	
@@ -587,9 +589,16 @@ text-align: center;
 	
 	   .menu{display: none;}
 	
-	   
+	   .dropdown-mobile{
+		color: #eee;
+		background-color: #000000;
+ 		position: relative;
+   }
+   .dropdown-mobile li a{
+	color: #eee;
+	background-color: #000000;
 
-
+}
 
 
 
